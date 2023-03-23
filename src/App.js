@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "./modules/Header";
+import {Routes, Route} from "react-router-dom"
+import United from "./modules/United";
+import YouTubeClone from "./pages/youtube-clone/YouTubeClone";
+import Calculator from "./pages/calculator/Calculator";
+import MathGame from "./pages/math-game/MathGame";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header/>
+      <Routes>
+        <Route path="/" element={<United/>}/>
+        <Route path="/youtube" element={<YouTubeClone/>}/>
+        <Route path="/calc" element={<Calculator/>}/>
+        <Route path="/math-game" element={<MathGame/>}/>
+      </Routes>
     </div>
   );
 }

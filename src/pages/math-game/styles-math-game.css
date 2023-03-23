@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+.mathApp,
+.mathApp2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='126' height='84' viewBox='0 0 126 84'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.25'%3E%3Cpath d='M126 83v1H0v-2h40V42H0v-2h40V0h2v40h40V0h2v40h40V0h2v83zm-2-1V42H84v40h40zM82 42H42v40h40V42zm-50-6a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM8 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm96 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm-42 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm30-12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM20 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm12 24a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM8 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM8 78a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm12 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm54 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM50 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM50 78a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm54-12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm12 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM92 54a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24 0a4 4 0 1 1 0-8 4 4 0 0 1 0 8zM92 78a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm24-42a4 4 0 1 1 0-8 4 4 0 0 1 0 8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 38px;
+    color: #FFF9E9;
+    transition: background-color 0.15s;
+    margin-top: 85px;
+    height: 1000px;
+}
+
+.mathApp {
+    background-color: #5a8100;
+    transition: background-color 0.15s;
+}
+
+.mathApp2 {
+    background-color: #8d0000;
+    transition: background-color 0.15s;
+}
+
+.whole {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title {
+    font-size: 74px;
+    margin-bottom: 100px;
+    font-weight: bold;
+}
+
+
+#expressionBlock {
+    margin-top: 100px;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#expressionBlock button {
+    padding: 15px 35px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 32px;
+    background: #FF6C02;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    color: #FFF9E9;
+    font-weight: bold;
+    transition: background 0.15s, color 0.15s;
+}
+
+#expressionBlock button:hover {
+    background: #bd4c02;
+}
+
+#expressionBlock button:active {
+    color: #FF6C02;
+    background: #FFFFFF;
+}
+
+.expression {
+    width: 220px;
+    text-align: center;
+}
+
+.answerInput {
+    background: #FFF9E9;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 62px;
+    border: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    height: 68px;
+    border-radius: 15px;
+    color: #FF6C02;
+    text-align: center;
+    font-weight: bold;
+    width: 20%;
+}
+
+.loud {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.onBoard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: #FFB400;
+    padding: 50px 75px;
+    margin: 0 250px;
+    position: relative;
+    transition: background 0.15s, color 0.15s;
+}
+
+.readyVerdict {
+    font-size: 64px;
+}
+
+.mainBoard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.none {
+    opacity: 0;
+    margin: 0;
+}
+
+.exitShower {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    cursor: pointer;
+    background: #8B2030;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    border-radius: 60px;
+    transition: background 0.15s, color 0.15s, border 0.15s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+
+}
+
+img {
+    width: 100%;
+}
+
+.exitShower:hover {
+    background: #FFF9E9;
+    color: #8B2030;
+}
+
+.exitShower:active {
+    background: rgba(255, 249, 233, 0.7);
+    border: solid 1px #8B2030;
+}
+
+#score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFB400;
+    color: #FFFFFF;
+    border-radius: 25px;
+    padding: 0 25px 22px;
+
+}
+
+.titleOfScoreBoard {
+    font-size: 58px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.scoreTable {
+    display: flex;
+    gap: 50px;
+    font-size: 46px;
+}
+
+.scoreTable div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    padding: 5px 10px;
+}
+
+.correctAnswers {
+    background: #5a8100;
+    border-radius: 25px;
+}
+
+.wrongAnswers {
+    background: #8B2030;
+}
+
+.amountOfWrongs,
+.amountOfRights {
+    font-size: 52px;
+    background: #FFB400;
+    height: 68px;
+    width: 68px;
+    border-radius: 60px;
+    margin: 10px 0;
+    font-weight: bold;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+    transition: font-size 0.3s, padding 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.amountOfWrongs:hover,
+.amountOfRights:hover {
+    font-size: 80px;
+    padding: 22px;
+    border-radius: 80px;
+}
+
+@media (max-width: 850px) {
+    .title {
+        font-size: 54px;
+    }
+
+    .mathApp,
+    .mathApp2 {
+        font-size: 30px;
+    }
+
+    .descriptOfTask {
+        width: 70%;
+    }
+
+    #expressionBlock button {
+        font-size: 26px;
+        padding: 10px 15px;
+    }
+
+    #expressionBlock {
+        font-size: 44px;
+    }
+}

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+.bodyCalc {
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    width: 700px;
+    margin: 0 100px;
+}
+
+#display {
+    background: #531319;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 25px 0;
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+#display button {
+    width: 15%;
+    margin: 0 20px;
+    color: #FFFFFF;
+    background: #8B2030;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.5);
+    transition: background 0.15s;
+}
+
+#display button:hover {
+    background: rgba(139, 32, 48, 0.7);
+}
+
+#display button:active {
+    color: #8B2030;
+    background: #FFFFFF;
+}
+
+#display input {
+    flex: 1;
+    background: #8B2030;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 20px;
+    height: 50px;
+}
+
+#typing {
+    flex-direction: column;
+    gap: 3px;
+    background: #FE4C6F;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#typing button {
+    background: #E7E7E9;
+    color: #8B2030;
+    flex: 1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+    height: 75px;
+}
+
+.rowOfButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    margin: 0 20px;
+}
+
+#typing button:hover {
+    background: rgba(231, 231, 233, 0.7);
+}
+
+#typing button:active {
+    background: #8B2030;
+    color: #E7E7E9;
+}
