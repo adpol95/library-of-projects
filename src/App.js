@@ -8,7 +8,7 @@ import MathGame from "./pages/math-game/MathGame";
 
 function App() {
   return (
-    <div>
+    <div className="mainPage">
       <Header/>
       <Routes>
         <Route path="/" element={<United/>}/>
