@@ -110,7 +110,7 @@
     border-radius: 20px;
     background: #FFB400;
     padding: 50px 75px;
-    margin: 0 250px;
+    width: 35%;
     position: relative;
     transition: background 0.15s, color 0.15s;
 }
@@ -231,7 +231,9 @@ img {
     }
 
     .mathApp,
-    .mathApp2 {
+    .mathApp2,
+    .titleOfScoreBoard,
+    .scoreTable p {
         font-size: 30px;
     }
 
