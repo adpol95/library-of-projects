@@ -72,8 +72,7 @@ function MathGame() {
           Let"s play my friend!
         </div>
         <div className="descriptOfTask">
-          Here we"ll trying to check your deep knowledge of math. Get ready,
-          cuz it"s gonna be a blood bath.
+          Here we"ll trying to check your deep knowledge of math. Get ready!
         </div>
         <div id="expressionBlock">
           <button onClick={shake} className="shakeBut">
